@@ -121,7 +121,7 @@ a:hover {
 
 #header .illustration {
   position: absolute;
-  right: -123px;
+  right: -250px;
   display: flex;
   align-self: center;
 }
@@ -402,9 +402,6 @@ footer .icons {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  #header .illustration {
-    right: -250px;
-  }
   #service .item .link {
     width: 60%;
   }
@@ -425,6 +422,9 @@ footer .icons {
     font-size: 1.125rem;
     text-align: center;
     margin-bottom: 25px;
+  }
+  #header .relative {
+    position: unset;
   }
   #header .illustration {
     top: 100px;

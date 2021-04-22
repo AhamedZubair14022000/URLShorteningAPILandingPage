@@ -125,7 +125,7 @@ a{
     }
     .illustration{
         position: absolute;
-        right: -123px;
+        right: -250px;
         display: flex;
         align-self: center;
     }
@@ -376,11 +376,6 @@ footer{
 }
 
 @media only screen and (max-width: 1199.98px) {
-    #header{
-        .illustration{
-            right: -250px;
-        }
-    }
     #service{
         .item{
             .link{
@@ -404,6 +399,9 @@ footer{
             font-size: 1.125rem;
             text-align: center;
             margin-bottom: 25px;
+        }
+        .relative{
+            position: unset;
         }
         .illustration{
             top: 100px;
