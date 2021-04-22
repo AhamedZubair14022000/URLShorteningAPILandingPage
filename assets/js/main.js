@@ -1,5 +1,5 @@
 //WOW js
-new WOW().init();
+// new WOW().init();
 
 //Loader
 $(window).on('load', function () {
