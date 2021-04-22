@@ -13,6 +13,11 @@ $dark-violet: #232127;
     font-family: 'Poppins', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 .relative{
     position: relative;
 }
