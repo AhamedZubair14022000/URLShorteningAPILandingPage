@@ -22,12 +22,17 @@ var linkcont = $("#item");
 //Get existing links
 getLinks();
 
-$("#form-shorten").click(function (e) {
+//Remove error message on change
+$("#theurl").change(function () {
+    $("#theurl").removeClass('err');
+});
+
+$("#form-shorten").submit(function (e) {
     e.preventDefault();
     $("#theurl").removeClass('err');
     if (URLIsValid(theurl.val())) {
         $(".ripple").css("display", "block");
-        $(this).prop('disabled', true);
+        $("#theurl").prop('disabled', true);
         //Post to API
         fetch("https://api.shrtco.de/v2/shorten?url=" + theurl.val())
             .then((res) => res.json())
