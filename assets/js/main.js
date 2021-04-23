@@ -22,7 +22,7 @@ var linkcont = $("#item");
 //Get existing links
 getLinks();
 
-$("#shorten").click(function (e) {
+$("#form-shorten").click(function (e) {
     e.preventDefault();
     $("#theurl").removeClass('err');
     if (URLIsValid(theurl.val())) {

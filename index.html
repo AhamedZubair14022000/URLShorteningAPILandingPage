@@ -12,14 +12,14 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="image"></a>
-            <div class="navbar-toggler" role="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <p class="burger-menu"></p>
-                <p class="burger-menu"></p>
-                <p class="burger-menu"></p>
-            </div>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="Shortly Logo"></a>
+            <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="burger-menu"></div>
+                <div class="burger-menu"></div>
+                <div class="burger-menu"></div>
+            </a>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav pt-4 pt-md-0">
+                <ul class="navbar-nav pt-4 pt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
                     </li>
@@ -30,12 +30,12 @@
                         <a class="nav-link" href="#">Resources</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto br-top pt-4 pb-4 pt-md-4">
+                <ul class="navbar-nav ml-auto br-top pt-4 pb-4 pt-lg-4">
                     <li class="nav-item">
                         <a class="nav-link login-btn" href="#">Login</a>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link button small">Sign Up</button>
+                        <button class="nav-link button small mb-3 mb-lg-0">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -50,12 +50,12 @@
         <div class="container">
             <div class="row h-100 relative">
                 <div class="col-12 col-lg-6 my-md-auto">
-                    <h3 class="title">More than just<br>shorter links</h3>
-                    <h5 class="sub-title">Build your brand’s recognition and get detailed insights
-                    on how your links are performing.</h5>
+                    <h1 class="title">More than just<br>shorter links</h1>
+                    <p class="sub-title">Build your brand’s recognition and get detailed insights
+                    on how your links are performing.</p>
                     <button class="button big wow animate__animated animate__tada">Get Started</button>
                 </div>
-                <img src="assets/img/illustration-working.svg" alt="image" class="illustration">
+                <img src="assets/img/illustration-working.svg" alt="Working illustration" class="illustration">
             </div>
         </div>
     </section>
@@ -63,10 +63,12 @@
         <div class="container relative">
             <div class="row">
                 <div class="shorten">
-                    <label for="theurl" class="d-none">URL:</label>
-                    <input type="text" id="theurl" name="theurl" placeholder="Shorten a link here...">
-                    <p id="err-msg"></p>
-                    <button id="shorten" class="button big">Shorten It!</button>
+                    <form action="#" id="form-shorten" onsubmit="shorten()" class="mb-0">
+                        <label for="theurl" class="d-none">URL:</label>
+                        <input type="text" id="theurl" name="theurl" placeholder="Shorten a link here...">
+                        <p id="err-msg"></p>
+                        <button id="shorten" class="button big">Shorten It!</button>
+                    </form>
                 </div>
             </div>
             <div class="row ripple">
@@ -85,7 +87,7 @@
         <div class="container relative blocks">
             <div class="row details">
                 <div class="col-12 col-md-6 offset-md-3">
-                    <h4 class="title wow animate__animated animate__slideInUp">Advanced Statistics</h4>
+                    <h2 class="title wow animate__animated animate__slideInUp">Advanced Statistics</h2>
                     <p class="sub-title wow animate__animated animate__slideInUp">Track how your links are performing across the web with our advanced statistics dashboard.</p>
                 </div>
             </div>
@@ -94,27 +96,27 @@
                 <div class="col-12 col-lg-4 first">
                     <div class="block wow animate__animated animate__slideInUp">
                         <div class="img-cont">
-                            <img src="assets/img/icon-brand-recognition.svg" alt="image" class="icon">
+                            <img src="assets/img/icon-brand-recognition.svg" alt="Chart" class="icon">
                         </div>
-                        <h4 class="title">Brand Recognition</h4>
+                        <h3 class="title">Brand Recognition</h3>
                         <p class="desc">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 second">
                     <div class="block wow animate__animated animate__slideInUp">
                         <div class="img-cont">
-                            <img src="assets/img/icon-detailed-records.svg" alt="image" class="icon">
+                            <img src="assets/img/icon-detailed-records.svg" alt="Odometer" class="icon">
                         </div>
-                        <h4 class="title">Detailed Records</h4>
+                        <h3 class="title">Detailed Records</h3>
                         <p class="desc">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions..</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 third">
                     <div class="block wow animate__animated animate__slideInUp">
                         <div class="img-cont">
-                            <img src="assets/img/icon-fully-customizable.svg" alt="image" class="icon">
+                            <img src="assets/img/icon-fully-customizable.svg" alt="Paint brush" class="icon">
                         </div>
-                        <h4 class="title">Fully Customizable</h4>
+                        <h3 class="title">Fully Customizable</h3>
                         <p class="desc">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
                     </div>
                 </div>
@@ -125,7 +127,7 @@
         <div class="container">
             <div class="row h-100">
                 <div class="col-12 my-auto">
-                    <h3 class="title wow animate__animated animate__slideInUp">Boost your links today</h3>
+                    <h2 class="title wow animate__animated animate__slideInUp">Boost your links today</h2>
                     <button class="button big wow animate__animated animate__slideInUp">Get Started</button>
                 </div>
             </div>
@@ -135,7 +137,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <img src="assets/img/logo.svg" alt="image" class="logo">
+                    <img src="assets/img/logo.svg" alt="Shortly Logo" class="logo">
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="row">
@@ -166,10 +168,10 @@
                         </div>
                         <div class="col-12 col-md-3">
                             <div class="d-flex icons">
-                                <a href="#" class="socmed"><img src="assets/img/icon-facebook.svg" alt="image" class="main"><img src="assets/img/icon-facebook-inverted-svg.png" alt="image" class="alt"></a>
-                                <a href="#" class="socmed"><img src="assets/img/icon-twitter.svg" alt="image" class="main"><img src="assets/img/icon-twitter-inverted-svg.png" alt="image" class="alt"></a>
-                                <a href="#" class="socmed"><img src="assets/img/icon-pinterest.svg" alt="image" class="main"><img src="assets/img/icon-pinterest-inverted-svg.png" alt="image" class="alt"></a>
-                                <a href="#" class="socmed"><img src="assets/img/icon-instagram.svg" alt="image" class="main"><img src="assets/img/icon-instagram-inverted-svg.png" alt="image" class="alt"></a>
+                                <a href="#" class="socmed"><img src="assets/img/icon-facebook.svg" alt="FB" class="main"><img src="assets/img/icon-facebook-inverted-svg.png" alt="FB" class="alt"></a>
+                                <a href="#" class="socmed"><img src="assets/img/icon-twitter.svg" alt="T" class="main"><img src="assets/img/icon-twitter-inverted-svg.png" alt="T" class="alt"></a>
+                                <a href="#" class="socmed"><img src="assets/img/icon-pinterest.svg" alt="P" class="main"><img src="assets/img/icon-pinterest-inverted-svg.png" alt="P" class="alt"></a>
+                                <a href="#" class="socmed"><img src="assets/img/icon-instagram.svg" alt="IG" class="main"><img src="assets/img/icon-instagram-inverted-svg.png" alt="IG" class="alt"></a>
                             </div>
                         </div>
                     </div>

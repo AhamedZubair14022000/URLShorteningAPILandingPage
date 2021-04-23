@@ -26,16 +26,17 @@ a:hover {
   background: #2acfcf !important;
   color: #fff !important;
   cursor: pointer !important;
+  border: 3px solid #2acfcf !important;
 }
 
 .button.big {
-  padding: 12px 40px !important;
+  padding: 6px 34px !important;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
 .button.small {
-  padding: 9px 23px !important;
+  padding: 6px 17px !important;
 }
 
 .button:disabled {
@@ -49,7 +50,8 @@ a:hover {
 }
 
 .button:focus {
-  outline: 0;
+  outline: 3px solid transparent;
+  border: 3px solid #9be3e2 !important;
 }
 
 .navbar {
@@ -91,6 +93,11 @@ a:hover {
   padding-right: 38px;
 }
 
+.navbar .navbar-nav .nav-item .nav-link:focus {
+  outline: 0;
+  color: #35323e;
+}
+
 .navbar .navbar-nav .nav-item:hover .nav-link {
   color: #35323e;
 }
@@ -100,6 +107,7 @@ a:hover {
   padding-top: 12px;
   position: relative;
   overflow: hidden;
+  max-height: 900px;
 }
 
 #header .title {
@@ -165,6 +173,10 @@ a:hover {
   border: 3px solid #f46262;
 }
 
+#service .shorten input:focus {
+  border: 3px solid #9be3e2;
+}
+
 #service .shorten #err-msg {
   position: absolute;
   color: #f46262;
@@ -174,7 +186,7 @@ a:hover {
 }
 
 #service .shorten .button {
-  height: 65px;
+  height: 60px;
   border-radius: 10px !important;
   float: right;
   padding: auto auto;
@@ -212,7 +224,7 @@ a:hover {
   margin-left: 25px;
   font-size: 1rem;
   border-radius: 5px !important;
-  padding: 8px 0 !important;
+  padding: 2px 0 !important;
   text-align: center;
   width: 100px;
 }
@@ -363,6 +375,11 @@ footer a:hover {
   text-decoration: none;
 }
 
+footer a:focus {
+  outline: 0;
+  color: #2acfcf;
+}
+
 footer .title {
   font-size: 1rem;
   margin-bottom: 20px;
@@ -375,6 +392,11 @@ footer .logo {
 
 footer .icons {
   justify-content: space-between;
+}
+
+footer .socmed:focus {
+  border-bottom: 3px solid #2acfcf;
+  padding-bottom: 10px;
 }
 
 .attribution {
@@ -401,6 +423,11 @@ footer .icons {
   text-decoration: none;
 }
 
+.attribution a:focus {
+  outline: 0;
+  color: #2acfcf;
+}
+
 @media only screen and (max-width: 1199.98px) {
   #service .item .link {
     width: 60%;
@@ -408,6 +435,39 @@ footer .icons {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .navbar {
+    top: 35px;
+    padding: 0 25px;
+  }
+  .navbar .navbar-collapse {
+    background: #3b3054;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 20px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+    color: #fff;
+  }
+  .navbar .navbar-nav .nav-item .login-btn {
+    padding-right: 20px !important;
+  }
+  .navbar .navbar-nav .nav-item .button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .navbar .navbar-nav .nav-item:hover .nav-link {
+    color: #f0f1f6;
+  }
+  .navbar .navbar-nav.br-top {
+    border-top: 1px solid #9e9aa7;
+  }
+  .navbar-toggler {
+    padding: 0 0;
+  }
   #header {
     height: auto;
     padding-top: 500px;
@@ -488,39 +548,6 @@ footer .icons {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .navbar {
-    top: 35px;
-    padding: 0 25px;
-  }
-  .navbar .navbar-collapse {
-    background: #3b3054;
-    border-radius: 10px;
-    text-align: center;
-    padding: 0 25px;
-    margin-top: 20px;
-  }
-  .navbar .navbar-nav .nav-item .nav-link {
-    margin-bottom: 20px;
-    font-size: 1.125rem;
-    color: #fff;
-  }
-  .navbar .navbar-nav .nav-item .login-btn {
-    padding-right: 20px !important;
-  }
-  .navbar .navbar-nav .nav-item .button {
-    display: block;
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .navbar .navbar-nav .nav-item:hover .nav-link {
-    color: #f0f1f6;
-  }
-  .navbar .navbar-nav.br-top {
-    border-top: 1px solid #9e9aa7;
-  }
-  .navbar-toggler {
-    padding: 0 0;
-  }
   #service {
     padding-bottom: 0;
   }
@@ -541,7 +568,7 @@ footer .icons {
   }
   #service .shorten .button {
     width: 100%;
-    height: 60px;
+    height: 54px;
   }
   #service .item {
     margin-top: 30px;
@@ -702,6 +729,21 @@ footer .icons {
   }
   100% {
     transform: translate(24px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ripple div {
+    animation-name: none;
+  }
+  .animate__tada {
+    animation-name: none;
+  }
+  .animate__slideInUp {
+    animation-name: none;
+  }
+  .animate__fadeIn {
+    animation-name: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
