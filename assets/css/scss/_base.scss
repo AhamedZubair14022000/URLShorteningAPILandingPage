@@ -53,6 +53,7 @@ a{
     }
     &:hover{
         background: $cyan-light !important;
+        border: 3px solid $cyan-light !important;
         color: #fff !important;
     }
     &:focus{

@@ -46,6 +46,7 @@ a:hover {
 
 .button:hover {
   background: #9be3e2 !important;
+  border: 3px solid #9be3e2 !important;
   color: #fff !important;
 }
 
