@@ -57,8 +57,13 @@ a{
         color: #fff !important;
     }
     &:focus{
-        outline: 3px solid transparent;
+        background: $cyan !important;
         border: 3px solid $cyan-light !important;
+        color: #fff !important;
+        outline: 0;
+        &.copied{
+            border: 3px solid $violet !important;
+        }
     }
 }
 
@@ -221,6 +226,7 @@ a{
             width: 100px;
             &.copied{
                 background: $violet !important;
+                border: 3px solid $violet !important;
             }
         }
         .close{
@@ -370,6 +376,33 @@ footer{
         &:focus{
             border-bottom: 3px solid $cyan;
             padding-bottom: 10px;
+        }
+    }
+}
+
+#popup{
+    p, li{
+        color: #141414;
+        font-size: 1rem;
+        line-height: 1.75;
+        margin-bottom: 0;
+    }
+    small{
+        text-align: center;
+        display: block;
+    }
+    .close{
+        span{
+            &:focus{
+                outline: 0;
+                border: 0;
+                color: $red;
+            }
+        }
+        &:focus{
+            outline: 0;
+            border: 0;
+            color: $red;
         }
     }
 }

@@ -58,9 +58,9 @@ $(".close").click(function (event) {
     temp.remove();
     //Delete an item
     var linkkey = $(this).data("linkkey");
-    items = JSON.parse(localStorage.getItem("items"));
+    items = JSON.parse(sessionStorage.getItem("items"));
     items.splice(linkkey, 1);
-    localStorage.setItem("items", JSON.stringify(items));
+    sessionStorage.setItem("items", JSON.stringify(items));
     // getLinks();
     location.reload();
 });
@@ -87,7 +87,7 @@ function storeLink(link, shortlink) {
     let item = { link, shortlink }; //data to be stored
     let items = get(); // get existing links
     items.push(item); // add new links to existing links
-    localStorage.setItem("items", JSON.stringify(items)); // store locally
+    sessionStorage.setItem("items", JSON.stringify(items)); // store locally
     // getLinks();
     location.reload();
 }
@@ -95,10 +95,10 @@ function storeLink(link, shortlink) {
 function get() {
     //Get items in local storage
     let items;
-    if (localStorage.getItem("items") == null) {
+    if (sessionStorage.getItem("items") == null) {
         items = [];
     } else {
-        items = JSON.parse(localStorage.getItem("items"));
+        items = JSON.parse(sessionStorage.getItem("items"));
     }
     return items;
 }

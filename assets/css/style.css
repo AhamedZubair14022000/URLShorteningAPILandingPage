@@ -51,8 +51,14 @@ a:hover {
 }
 
 .button:focus {
-  outline: 3px solid transparent;
+  background: #2acfcf !important;
   border: 3px solid #9be3e2 !important;
+  color: #fff !important;
+  outline: 0;
+}
+
+.button:focus.copied {
+  border: 3px solid #3b3054 !important;
 }
 
 .navbar {
@@ -232,6 +238,7 @@ a:hover {
 
 #service .item .button.copied {
   background: #3b3054 !important;
+  border: 3px solid #3b3054 !important;
 }
 
 #service .item .close {
@@ -398,6 +405,30 @@ footer .icons {
 footer .socmed:focus {
   border-bottom: 3px solid #2acfcf;
   padding-bottom: 10px;
+}
+
+#popup p, #popup li {
+  color: #141414;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+#popup small {
+  text-align: center;
+  display: block;
+}
+
+#popup .close span:focus {
+  outline: 0;
+  border: 0;
+  color: #f46262;
+}
+
+#popup .close:focus {
+  outline: 0;
+  border: 0;
+  color: #f46262;
 }
 
 .attribution {
