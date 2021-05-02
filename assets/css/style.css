@@ -407,16 +407,26 @@ footer .socmed:focus {
   padding-bottom: 10px;
 }
 
+#popup {
+  color: #fff;
+}
+
+#popup .modal-content {
+  border-radius: 10px;
+  background: #3b3054;
+}
+
 #popup p, #popup li {
-  color: #141414;
   font-size: 1rem;
   line-height: 1.75;
   margin-bottom: 0;
 }
 
-#popup small {
-  text-align: center;
-  display: block;
+#popup .close {
+  color: #fff !important;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 #popup .close span:focus {
