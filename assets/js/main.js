@@ -1,6 +1,20 @@
 //WOW js
 new WOW().init();
 
+$(document).ready(function () {
+    //Smooth Scroll to Div
+    $(".smooth-scroll").on('click', function (event) {
+        event.preventDefault();
+        var hash = '#header';
+        var size = $("#header").height() / 2;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top + size
+        }, 400, function () {
+            window.location.hash = hash;
+        });
+    });
+})
+
 //Loader
 $(window).on('load', function () {
     $("#loader").addClass("d-none");
